@@ -49,26 +49,17 @@ Displays key insights such as:
 ---
 ---
 ## Folder structure
-LeadDash/
-└── leadscoreapp/
-    ├── data/
-    │   └── leads_dataset.csv        # Mock data for initial run
-    │
-    ├── app/
-    │   ├── __init__.py
-    │   ├── main.py                  # Main Streamlit app
-    │   ├── preprocessing.py         # Cleaning, deduplication, and feature engineering
-    │   ├── scoring.py               # Lead scoring logic
-    │   └── insights.py              # Clustering & visualizations
-    │
-    ├── requirements.txt
-    └── README.md
+
+<img width="955" height="421" alt="image" src="https://github.com/user-attachments/assets/24a1e472-d731-42cb-a539-f6890c78afb0" />
+
 ---
 
 ## Dashboard preview
 
 Below is a screenshot of the working Streamlit dashboard with filters, lead scores, and insights:
+
 <img width="1901" height="966" alt="Screenshot 2025-10-13 151517" src="https://github.com/user-attachments/assets/154bd08d-fed1-44cd-a539-5856db9bb00a" />
+
 
 screenshot of Top insights and Top 10 rows after cleaning and Ranking:
 
@@ -85,18 +76,18 @@ git clone https://github.com/Gurukiran20/caprae-ai-leadgen-dashboard.git
 cd caprae-ai-leadgen-dashboard/leadscoreapp
 ```
 2. **Create and activate virtual environment**
-   python -m venv venv
-   venv\Scripts\activate
+   - python -m venv venv
+   - venv\Scripts\activate
 
 3. **Install dependencies**
-   pip install -r requirements.txt
+   - pip install -r requirements.txt
 
 4. **Run the Streamlit app**
-  streamlit run main.py
+   - streamlit run main.py
  ---
 
  ---
-## License
+#### License
 
 This project is shared for evaluation and educational purposes only.  
 For commercial use, please contact the author.
