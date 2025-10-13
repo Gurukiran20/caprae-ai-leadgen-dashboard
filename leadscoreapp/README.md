@@ -1,7 +1,10 @@
 # 🧠 Smart Lead & Insights Dashboard  
 
 This project was developed as part of **Caprae Capital’s AI-Readiness Pre-Screening Challenge**.  
-It is a practical and lightweight AI-powered tool designed to **detect and remove duplicate leads**, **prioritize companies based on key metrics**, and **visualize meaningful insights** through an interactive dashboard.
+It is a practical and lightweight AI-powered toolthat helps sales and investing teams:
+- **Detect and remove duplicate company leads**
+- **prioritize companies based on key metrics**
+- **visualize meaningful insights** through an interactive dashboard.
 
 ---
 
@@ -12,17 +15,26 @@ Automatically detects and removes near-duplicate company names using fuzzy strin
 Helps maintain clean lead data and prevents redundant outreach.  
 
 ✅ **Lead Prioritization**  
-Implements a scoring algorithm that prioritizes leads based on factors such as **Annual Revenue**, **Marketing Spend**, and **Conversion Rate** — helping identify high-value opportunities.  
+Implements a smart scoring algorithm that prioritizes leads based on factors such as:
+- **Annual Revenue**
+- **Marketing Spend**
+- **Conversion Rate**
+Ranks the highest potential leads for faster targeting.
 
 ✅ **Interactive Insights Dashboard**  
 A simple and intuitive **Streamlit dashboard** built with **Plotly** for data visualization.  
-Includes filters for **Industry**, **Region**, and **District** to explore patterns in the data.  
+Includes filters by
+- **Industry**
+- **Region**
+- **District**
+  which helps to explore patterns in the data.  
 
 ✅ **Top Insights Section**  
 Displays key insights such as:  
 - Total number of companies  
 - Average revenue  
-- Top-performing industry  
+- Top-performing industry
+- Regional conversion trends 
 
 ---
 
@@ -35,4 +47,58 @@ Displays key insights such as:
 - **Plotly**  
 
 ---
+---
+## Folder structure
+LeadDash/
+└── leadscoreapp/
+    ├── data/
+    │   └── leads_dataset.csv        # Mock data for initial run
+    │
+    ├── app/
+    │   ├── __init__.py
+    │   ├── main.py                  # Main Streamlit app
+    │   ├── preprocessing.py         # Cleaning, deduplication, and feature engineering
+    │   ├── scoring.py               # Lead scoring logic
+    │   └── insights.py              # Clustering & visualizations
+    │
+    ├── requirements.txt
+    └── README.md
+---
 
+## Dashboard preview
+
+Below is a screenshot of the working Streamlit dashboard with filters, lead scores, and insights:
+<img width="1901" height="966" alt="Screenshot 2025-10-13 151517" src="https://github.com/user-attachments/assets/154bd08d-fed1-44cd-a539-5856db9bb00a" />
+
+screenshot of Top insights and Top 10 rows after cleaning and Ranking:
+
+<img width="1889" height="967" alt="Screenshot 2025-10-13 151553" src="https://github.com/user-attachments/assets/ff312176-0008-4434-a4f7-c7c235609d88" />
+
+---
+
+##  How to Run Locally
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Gurukiran20/caprae-ai-leadgen-dashboard.git
+cd caprae-ai-leadgen-dashboard/leadscoreapp
+```
+2. **Create and activate virtual environment**
+   python -m venv venv
+   venv\Scripts\activate
+
+3. **Install dependencies**
+   pip install -r requirements.txt
+
+4. **Run the Streamlit app**
+  streamlit run main.py
+ ---
+
+ ---
+## License
+
+This project is shared for evaluation and educational purposes only.  
+For commercial use, please contact the author.
+ ---
+   
