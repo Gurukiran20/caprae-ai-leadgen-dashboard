@@ -45,7 +45,7 @@ Displays key insights such as:
 - **fuzzywuzzy**  
 - **Streamlit**  
 - **Plotly**  
-
+- **Synthetic B2B CRM & Marketing Dataset** - dataset which is used in this project
 ---
 ---
 ## Folder structure
